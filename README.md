@@ -1,1 +1,1 @@
-# galaxy_book_showcase
+# galaxy_fold_showcase
