@@ -217,7 +217,6 @@ ul li {
     ;
     border-radius: 8px;
     box-shadow: 0 3px 10px rgb(95, 7, 196);
-    ;
     height: 450px;
     width: 350px;
 }
@@ -257,35 +256,42 @@ ul li {
 }
 
 
-/* Stats */
-.stats {
+/* Favorite Features*/
+.favorite {
     padding-top: 150px;
     color: black;
     display: flex;
     flex-direction: row;
 }
 
-.stats-container {
+.favorite-container {
     display: flex;
     gap: 70px;
 }
 
-.stats-heading {
+.favorite-heading {
     max-width: 500px;
     margin: auto;
 }
 
-.stats-heading {
+.favorite-heading {
     font-size: 1.5rem;
 }
 
-.stats .stats-container p {
+.favorite .favorite-container p {
     font-size: 1rem;
     font-weight: bold;
 }
 
+.icons {
+    padding: 10px;
+    border: 2px solid transparent;
+}
+.icons:hover {
+    animation: borderAround 0.8s forwards;
+}
 
-/* Fold Display */
+/* Fold Display & Grid */
 .fold-display {
     display: flex;
     justify-content: center;
@@ -298,7 +304,6 @@ ul li {
     grid-template-rows: repeat(3, 1fr);
     background-color: rgb(31, 29, 29);
     padding: 60px 0;
-    border: 1px solid red;
 }
 
 .fold-display .fold-grid video {
@@ -323,9 +328,11 @@ ul li {
     border-radius: 8px;
 }
 
-.fold-display img, video {
+.fold-display img,
+video {
     margin-left: 100px;
 }
+
 .fold-card:nth-child(3) {
     grid-column: 3 / 3;
     grid-row: 1 / 2;
@@ -335,9 +342,45 @@ ul li {
     grid-column: 3/ 4;
     grid-row: 3 / 4;
 }
+
 .fold-card:nth-child(3),
 .fold-card:nth-child(4) {
     background-color: #067aee;
     border-radius: 8px;
     padding: 10px;
+}
+
+
+/* Keyframes */
+@keyframes borderAround {
+    0% {
+        border-right: 2px solid rgb(95, 7, 196);
+        border-radius: 8px;
+    }
+
+    25% {
+        border-right: 2px solid  rgb(95, 7, 196);
+        border-bottom: 2px solid  rgb(95, 7, 196);
+    }
+
+    50% {
+        border-right: 2px solid  rgb(95, 7, 196);
+        border-bottom: 2px solid  rgb(95, 7, 196);
+        border-left: 2px solid  rgb(95, 7, 196);
+    }
+
+    75% {
+        border-right: 2px solid  rgb(95, 7, 196);
+        border-bottom: 2px solid  rgb(95, 7, 196);
+        border-left: 2px solid  rgb(95, 7, 196);
+    }
+
+    100% {
+        border-right: 2px solid rgb(95, 7, 196);
+        border-bottom: 2px solid rgb(95, 7, 196);
+        border-left: 2px solid  rgb(95, 7, 196);
+        border-top: 2px solid  rgb(95, 7, 196);
+        box-shadow: 0 3px 10px rgb(95, 7, 196);
+        border-radius: 8px;
+    }
 }
