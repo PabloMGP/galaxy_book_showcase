@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
+:root {
+    --primaryColor: #067aee;
+    --secondaryColor: #257cd3;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +14,7 @@
 /* Base Styles */
 body {
     font-family: 'Lato', sans-serif;
-    color: #333;
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -22,13 +27,6 @@ a {
     color: #333;
 }
 
-h1,
-h2 {
-    font-weight: 300;
-    line-height: 1.2;
-    margin: 10px 0;
-}
-
 p {
     margin: 10px 0;
 }
@@ -39,7 +37,7 @@ img {
 
 /* Nav Bar */
 .navbar {
-    background-color: #067aee;
+    background-color: var(--primaryColor);
     height: 70px;
     color: white;
 }
@@ -55,7 +53,7 @@ img {
 }
 
 ul li {
-        margin-top: 30px;
+    margin-top: 30px;
 }
 
 .navbar a {
@@ -79,6 +77,45 @@ ul li {
     background: #df9d11;
 }
 
+/* Main Content */
+.text-center {
+    text-align: center;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem 0;
+}
+
+
+.main {
+    height: 400px;
+    background-color: rgb(37, 34, 41);
+    position: relative;
+
+}
+
+.main h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.main p {
+    margin-top: 5px;
+}
+
+/* Utilities */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -92,4 +129,128 @@ ul li {
     height: 100%;
 }
 
+.main-flex {
+    display: flex;
+    background-color: rgb(37, 34, 41);
+    justify-content: center;
+    align-content: center;
+    overflow: visible;
+}
 
+.main .main-flex .main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 40%;
+    align-content: center;
+    margin: 25px 0 0 150px;
+    /* Centers content in large screens */
+    max-width: 450px;
+}
+
+.btn-primary {
+    max-width: 120px;
+    cursor: pointer;
+    background-color: var(--secondaryColor);
+    border: none;
+    border-radius: 5px;
+}
+
+.main-form {
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 60px;
+    z-index: 20;
+}
+
+.form-control {
+    margin: 20px;
+}
+
+.main-form input[type="text"],
+.main-form input[type="email"] {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #df9d11;
+    width: 100%;
+    padding: 3px;
+    font-size: 1rem;
+    outline: none;
+    color: white;
+}
+
+.main-form input[type="text"]:not(:focus)::placeholder,
+.main-form input[type="email"]:not(:focus)::placeholder {
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 300px 0 0;
+    /* Centers content in large screens */
+    padding: 20px;
+    background-color: rgb(59, 56, 56);
+    border: 1px solid rgb(95, 7, 196);
+    ;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(95, 7, 196);
+    ;
+    height: 450px;
+    width: 350px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #a07c07;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: rgb(235, 230, 230);
+    font-weight: 500;
+}
+
+.btn-primary:hover,
+.btn:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+    background-color: rgb(77, 6, 158);
+}
+
+.main::before,
+.main::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -100px;
+    right: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform: skewY(-3deg);
+    /* Browser adaptations */
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+
+/* Stats */
+.stats {
+    padding-top: 150px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
