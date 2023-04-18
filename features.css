@@ -63,14 +63,9 @@
     border-radius: 12px;
     border: 1px transparent;
     padding: 5px;
-    box-shadow: 0 3px 10px rgb(95, 7, 196);
+    box-shadow: 0 3px 5px rgb(95, 7, 196);
     border-radius: 8px;
     border: 2px solid rgb(95, 7, 196);
-}
-
-.features .feature:hover {
-    transition: 0.4s;
-    transform: scale(1.1);
 }
 
 .dimensions {
@@ -232,7 +227,6 @@
         background-color: var(--secondaryColor);
         border-radius: 50%;
         border: 2px solid rgb(95, 7, 196);
-        border-radius: 8px;
     }
 
     100% {
@@ -245,7 +239,6 @@
         background-color: var(--secondaryColor);
         border-radius: 50%;
         border: 2px solid rgb(95, 7, 196);
-        border-radius: 8px;
     }
 }
 
