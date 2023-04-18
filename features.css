@@ -1,0 +1,382 @@
+/* Features - Intro */
+.main-flex {
+    height: 400px;
+    background-color: rgb(37, 34, 41);
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.main-text {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text p {
+    margin: 0 70px 10px 70px;
+}
+
+.main-text q {
+    display: inline;
+    font-weight: bold;
+    color: #f5af19;
+    margin: 10px 0 0 0;
+}
+
+.fold-img {
+    animation: foldImage 5s infinite alternate;
+}
+
+.fold-img:hover {
+    filter: invert();
+    animation-play-state: paused;
+}
+
+/* Features */
+.features {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.features-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 900px;
+}
+
+.features-wrapper img {
+    max-width: 150px;
+}
+
+/* Features Cards */
+.features .feature {
+    border-radius: 12px;
+    border: 1px transparent;
+    padding: 5px;
+    box-shadow: 0 3px 10px rgb(95, 7, 196);
+    border-radius: 8px;
+    border: 2px solid rgb(95, 7, 196);
+}
+
+.features .feature:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.dimensions {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f12711;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.display {
+
+    flex: 1 1 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0052D4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.camera {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1488CC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7a7db3, #1488CC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8b8fe6, #1488CC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.chipset {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #BBD2C5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #536976, #829e8e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #536976, #727574);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.weight {
+    background-color: red;
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1488CC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7a7db3, #1488CC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8b8fe6, #1488CC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/* Keyframes */
+@keyframes foldImage {
+    0% {
+        background-image: url("https://res.cloudinary.com/dsitzow1q/image/upload/v1681745087/galaxy_fold_showcase/noun-smart-phone-tablet-with-foldable-screen-2554442_oywuiv.webp");
+        background-size: 100%;
+        max-width: 400px;
+        margin: 30px 0 30px 30px;
+        background-color: var(--secondaryColor);
+        border-radius: 50%;
+        border: 2px solid rgb(95, 7, 196);
+        box-shadow: 0 3px 10px rgb(95, 7, 196);
+
+    }
+
+    25% {
+        background-image: url("https://res.cloudinary.com/dsitzow1q/image/upload/v1681745087/galaxy_fold_showcase/noun-smart-phone-tablet-with-foldable-screen-2554442_oywuiv.webp");
+        background-size: 100%;
+        max-width: 400px;
+        margin: 30px 0 30px 30px;
+        background-color: var(--secondaryColor);
+        border-radius: 50%;
+        border: 2px solid rgb(95, 7, 196);
+        box-shadow: 0 3px 10px rgb(95, 7, 196);
+    }
+
+    50% {
+        background-image: url("https://res.cloudinary.com/dsitzow1q/image/upload/v1681723625/galaxy_fold_showcase/noun-foldable-smartphone-2554439_hwthva.webp");
+        background-size: 100%;
+        max-width: 400px;
+        margin: 30px 0 30px 30px;
+        background-color: var(--secondaryColor);
+        border-radius: 50%;
+        border: 2px solid rgb(95, 7, 196);
+        border-radius: 8px;
+    }
+
+    100% {
+        background-image: url("https://res.cloudinary.com/dsitzow1q/image/upload/v1681723625/galaxy_fold_showcase/noun-foldable-smartphone-2554439_hwthva.webp");
+        background-size: 100%;
+        max-width: 400px;
+        margin: 30px 0 30px 30px;
+        background-color: var(--secondaryColor);
+        border-radius: 50%;
+        border: 2px solid rgb(95, 7, 196);
+        border-radius: 8px;
+    }
+}
+
+@keyframes foldImage2 {
+    0% {
+        background-image: url("https://res.cloudinary.com/dsitzow1q/image/upload/v1681745087/galaxy_fold_showcase/noun-smart-phone-tablet-with-foldable-screen-2554442_oywuiv.webp");
+        background-size: 100%;
+        max-width: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 30px;
+        background-color: var(--secondaryColor);
+        border-radius: 50%;
+        border: 2px solid rgb(95, 7, 196);
+        box-shadow: 0 3px 10px rgb(95, 7, 196);
+
+    }
+
+    25% {
+        background-image: url("https://res.cloudinary.com/dsitzow1q/image/upload/v1681745087/galaxy_fold_showcase/noun-smart-phone-tablet-with-foldable-screen-2554442_oywuiv.webp");
+        background-size: 100%;
+        max-width: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 30px;
+        background-color: var(--secondaryColor);
+        border-radius: 50%;
+        border: 2px solid rgb(95, 7, 196);
+        box-shadow: 0 3px 10px rgb(95, 7, 196);
+    }
+
+    50% {
+        background-image: url("https://res.cloudinary.com/dsitzow1q/image/upload/v1681723625/galaxy_fold_showcase/noun-foldable-smartphone-2554439_hwthva.webp");
+        background-size: 100%;
+        max-width: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 30px;
+        background-color: var(--secondaryColor);
+        border-radius: 50%;
+        border: 2px solid rgb(95, 7, 196);
+        border-radius: 8px;
+    }
+
+    100% {
+        background-image: url("https://res.cloudinary.com/dsitzow1q/image/upload/v1681723625/galaxy_fold_showcase/noun-foldable-smartphone-2554439_hwthva.webp");
+        background-size: 100%;
+        max-width: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 30px;
+        background-color: var(--secondaryColor);
+        border-radius: 50%;
+        border: 2px solid rgb(95, 7, 196);
+        border-radius: 8px;
+    }
+}
+
+
+/* @Media */
+@media (max-width: 1000px) {
+    .navbar {
+        max-width: 100%;
+    }
+p,
+q, 
+h1, 
+h2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    max-width: 60%;
+    padding: 0;
+}
+    .main-flex {
+        max-width: 100%;
+        height: 600px;
+        background-color: rgb(37, 34, 41);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .main-text {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-text p*,
+    .main-text q {
+        text-align: center;
+        
+    }
+
+    .fold-img {
+        display: flex;
+        height: 200px;
+        width: 100%;
+        animation: foldImage2 5s infinite alternate;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
+    .features {
+        max-width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .features p {
+        font-size: 0.8rem;
+        margin: 10px 0;
+        max-width: 90%;
+    }
+
+    .features-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        max-width: 300px;
+    }
+
+    .features-wrapper img {
+        max-width: 30%;
+        margin: 0 auto;
+    }
+
+    .features .feature {
+        display: flex;
+        flex-direction: column;
+
+
+        margin: 20px 0;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 330px) {
+    .navbar {
+        max-width: 100%;
+    }
+p,
+q, 
+h1, 
+h2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    max-width: 60%;
+    padding: 0;
+}
+    .main-flex {
+        max-width: 100%;
+        height: 700px;
+        background-color: rgb(37, 34, 41);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+
+
+
+}

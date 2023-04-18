@@ -150,6 +150,7 @@ ul li {
     justify-content: center;
     align-content: center;
     overflow: visible;
+    gap: 30px;
 }
 
 .main .main-flex .main-text {
@@ -418,6 +419,26 @@ footer {
     color: white;
     margin-top: 40px;
     justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+footer img {
+    margin-left: 20px;
+    max-width: 30px;
+    margin: 3px;
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+    filter: invert();
+
 }
 
 /* Keyframes */
@@ -454,7 +475,9 @@ footer {
     }
 }
 
-@media (max-width: 1000px) {
+
+/* @Media */
+@media (max-width: 1150px) {
     h1 {
         font-size: 1rem;
         ;
@@ -512,7 +535,7 @@ footer {
     }
 
     .container h2:nth-child(1) {
-        margin-top: 150px;
+        margin-top: 80px;
     }
 
     .ecosystem-favorites,
@@ -581,7 +604,7 @@ footer {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
     .flex {
         display: flex;
         justify-content: space-between;
@@ -622,7 +645,7 @@ footer {
         max-width: 200px;
     }
 
-    .favorite h3 {
-        padding-top: 50px;
+    .favorite h2 {
+        padding-top: 140px;
     }
 }
